@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>GAINZ - Signup</title>
+        <style>
+            body {
+                //background-color: #f97b0f !important;
+                background-image: url("backGradient.png");
+            }
+            .navbar {
+              background-color: #944fe7 !important;
+            }
+            .navbar .navbar-brand {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-brand:hover,
+            .navbar .navbar-brand:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a:hover,
+            .navbar .navbar-text a:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-link {
+              color: #ecf0f1 !important;
+              border-radius: .25rem;
+              margin: 0 0.25em;
+            }
+            .navbar .navbar-nav .nav-link:not(.disabled):hover,
+            .navbar .navbar-nav .nav-link:not(.disabled):focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-item.active .nav-link,
+            .navbar .navbar-nav .nav-item.active .nav-link:hover,
+            .navbar .navbar-nav .nav-item.active .nav-link:focus,
+            .navbar .navbar-nav .nav-item.show .nav-link,
+            .navbar .navbar-nav .nav-item.show .nav-link:hover,
+            .navbar .navbar-nav .nav-item.show .nav-link:focus {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle {
+              border-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle:hover,
+            .navbar .navbar-toggle:focus {
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle .navbar-toggler-icon {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-collapse,
+            .navbar .navbar-form {
+              border-color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link:hover {
+              color: #ecf0f1 !important;
+            }
+
+            @media (max-width: 575px) {
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 767px) {
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 991px) {
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 1199px) {
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .border-custom{border-color:#944fe7!important}
+            .alertReg{
+                display:none;
+            }
+            .showReg{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-default bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="dumbbell.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wp.html">Lifting Program</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron border border-custom">
+              <h1 class="display-4" align = "center">GAINZ Lifting Registration</h1>
+              <hr class="my-4">
+              <form id = "registerForm" class="form-group showReg">
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Email</label>
+                  <div class="col-10">
+                    <input class="form-control" type="email" value="" id="email" placeholder="geese@aol.com" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Username</label>
+                  <div class="col-10">
+                    <input class="form-control" type="text" value="" id="name" placeholder="gooseLover99" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label  class="col-2 col-form-label">Password</label>
+                  <div class="col-10">
+                    <input class="form-control" type="password" value="" id="password" placeholder="Password" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Weight (lbs)</label>
+                  <div class="col-10">
+                    <input class="form-control" type="number" value="" id="weight" placeholder="150" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Height (inches)</label>
+                  <div class="col-10">
+                    <input class="form-control" type="number" value="" id="height" placeholder="66" required>
+                  </div>
+                </div>
+                <input type="radio" name="gender" value="male"> Male
+                  &nbsp;
+                <input type="radio" name="gender" value="female"> Female
+                  &nbsp;
+                <input type="radio" name="gender" value="other"> Other
+                <hr class="my-4">
+                <p class="lead">Pick a workout plan, from preselected or customize your plan.</p>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Program Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Link</th>
+                      <th scope="col">Select</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Beginner Program</td>
+                      <td>A simple start to a great lifting career.</td>
+                      <td><a class="button btn btn-light mb-2" href="beginner.html" target="_blank">PDF</a></td>
+                      <td><input type="radio" name="program" value="beginner"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Intermediate Program</td>
+                      <td>An all inclusive workout involving a variety of gym equipment and more difficult exercises.</td>
+                      <td><a class="button btn btn-light mb-2" href="intermediate.html" target="_blank">PDF</a></td>
+                      <td><input type="radio" name="program" value="intermediate"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Calisthenics</td>
+                      <td>A very comprehensive program using no weights whatsoever.</td>
+                      <td><a class="button btn btn-light mb-2" href="Calisthenics.html" target="_blank">PDF</a></td>
+                      <td><input type="radio" name="program" value="calisthenics"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Custom Workout</th>
+                        <th colspan="2">Select your specific exercises for each muscle group below.</th>
+                        <td><input type="radio" name="program" value="custom"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr class="my-4">
+                <p class="lead">Custom Plan Creation (Ignore if you chose pre-made program)</p>
+                <table class="table table-sm table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Muscle Group</th>
+                      <th scope="col">Workout Select</th>
+                      <th scope="col">Other</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Biceps</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="bicepExercise" aria-label="Common Bicep Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Incline Dumbbell Hammer Curl">Incline Dumbbell Hammer Curl</option>
+                                <option value="Concentration Dumbbell Curl">Concentration Dumbbell Curl</option>
+                                <option value="EZ-Bar Curl">EZ-Bar Curl</option>
+                                <option value="Barbell Curl">Barbell Curl</option>
+                                <option value="Dumbbell Curl">Dumbbell Curl</option>
+                                <option value="Hammer Curl">Hammer Curl</option>
+                                <option value="Preacher Curl">Preacher Curl</option>
+                                <option value="Spider Curl">Spider Curl</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherBicep" placeholder="Other">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Triceps</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="tricepExercise" aria-label="Common Tricep Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Machine Triceps Extension">Machine Triceps Extension</option>
+                                <option value="Dumbbell Kickback">Dumbbell Kickback</option>
+                                <option value="Overhead Dumbbell Triceps Extension">Overhead Dumbbell Triceps Extension</option>
+                                <option value="Weighted Triceps Dip">Weighted Triceps Dip</option>
+                                <option value="Close-Grip Push-Up">Close-Grip Push-Up</option>
+                                <option value="Close-Grip Bench-Press">Close-Grip Bench-Press</option>
+                                <option value="Skullcrushers">Skullcrushers</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherTricep" placeholder="Other">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Shoulders</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="shoulderExercise" aria-label="Common Shoulder Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Overhead Press">Overhead/ Military Press</option>
+                                <option value="Push Press">Push Press</option>
+                                <option value="Upright Row">Upright Row</option>
+                                <option value="Rows">Row</option>
+                                <option value="Fly">Fly</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherShoulder" placeholder="Other">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Traps</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="trapExercise" aria-label="Common Trap Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Shrug">Shrug</option>
+                                <option value="Deadlift">Deadlift</option>
+                                <option value="Hang Clean">Hang Clean</option>
+                                <option value="Farmer's Walk">Farmer's Walk</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherTrap" placeholder="Other">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Chest</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="chestExercise" aria-label="Common Chest Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Bench Press">Bench Press</option>
+                                <option value="Incline Bench Press">Incline Bench Press</option>
+                                <option value="Decline Bench Press">Decline Bench Press</option>
+                                <option value="Push Up">Push Up</option>
+                                <option value="Machine Fly">Machine Fly</option>
+                                <option value="Machine Chest Press">Machine Chest Press</option>
+                                <option value="Dumbbell Bench Press">Dumbbell Bench Press</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherChest" placeholder="Other">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Upper Back</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="uBackExercise" aria-label="Common Upper Back Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Deadlift">Deadlift</option>
+                                <option value="Pull-Up">Pull-Up</option>
+                                <option value="Row">Row</option>
+                                <option value="Machine Lat Pull-Down">Machine Lat Pull-Down</option>
+                                <option value="Dumbbell Row">Dumbbell Row</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherUBack" placeholder="Other">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Lower Back</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="lBackExercise" aria-label="Common Lower Back Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Deficit Deadlift">Deficit Deadlift</option>
+                                <option value="Goodmorning">Goodmorning's</option>
+                                <option value="Hyperextension">Hyperextension</option>
+                                <option value="RDL">RDL</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherLBack" placeholder="Other">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>Core</td>
+                      <td>
+                          <div class="input-group">
+                              <select class="custom-select" id="coreExercise" aria-label="Common Core Exercises">
+                                <option selected>Choose...</option>
+                                <option value="Plank">Plank</option>
+                                <option value="Crunch">Crunch</option>
+                                <option value="Russian Twists">Russian Twists</option>
+                                <option value="V-Ups">V-Ups</option>
+                                <option value="Leg-Raises">Leg-Raises</option>
+                                <option value="Flutter Kicks">Flutter Kicks</option>
+                                <option value="Side Plank">Side Plank</option>
+                                <option value="Bicycle Kicks">Bicycle Kicks</option>
+                                <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </td>
+                      <td>
+                          <input class="form-control" type="text" value="" id="otherCore" placeholder="Other">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="form-group row" align = "center">
+                  <button type="submit" class="btn btn-dark col-lg-12">Sign Up</button>
+                </div>
+            </form>
+                <div class="form-group row alertReg" align = "center">
+                    <button type="button" class="btn btn-success col-lg-12" disabled>Thank you for registering.</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script src="wpSignup.js"></script>
+
+</html>
