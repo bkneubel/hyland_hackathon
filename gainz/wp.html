@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>GAINZ - Lifting Program</title>
+        <style>
+            body {
+                //background-color: #f97b0f !important;
+                background-image: url("backGradient.png");
+            }
+            .navbar {
+              background-color: #944fe7 !important;
+            }
+            .navbar .navbar-brand {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-brand:hover,
+            .navbar .navbar-brand:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a:hover,
+            .navbar .navbar-text a:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-link {
+              color: #ecf0f1 !important;
+              border-radius: .25rem;
+              margin: 0 0.25em;
+            }
+            .navbar .navbar-nav .nav-link:not(.disabled):hover,
+            .navbar .navbar-nav .nav-link:not(.disabled):focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-item.active .nav-link,
+            .navbar .navbar-nav .nav-item.active .nav-link:hover,
+            .navbar .navbar-nav .nav-item.active .nav-link:focus,
+            .navbar .navbar-nav .nav-item.show .nav-link,
+            .navbar .navbar-nav .nav-item.show .nav-link:hover,
+            .navbar .navbar-nav .nav-item.show .nav-link:focus {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle {
+              border-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle:hover,
+            .navbar .navbar-toggle:focus {
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle .navbar-toggler-icon {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-collapse,
+            .navbar .navbar-form {
+              border-color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link:hover {
+              color: #ecf0f1 !important;
+            }
+
+            @media (max-width: 575px) {
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 767px) {
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 991px) {
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 1199px) {
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .border-custom{border-color:#944fe7!important}
+            .alert{
+                display:none;
+            }
+            .wpLogin{
+                display:block;
+            }
+            .wpWelcome{
+                display:none;
+            }
+            .wpRegister{
+                display:block;
+            }
+            .wpOnline{
+                display:none;
+            }
+            .sunday{
+                display:none;
+            }
+            .monday{
+                display:none;
+            }
+            .tuesday{
+                display:none;
+            }
+            .wednesday{
+                display:none;
+            }
+            .thursday{
+                display:none;
+            }
+            .friday{
+                display:none;
+            }
+            .saturday{
+                display:none;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-default bg-light sticky-top">
+          <a class="navbar-brand" href="index.html">
+            <img src="dumbbell.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="wp.html">Lifting Program</a>
+              </li>
+            </ul>
+          </div>
+          <div class="wpLogin">
+                  <form id="accessForm" class="form-inline">
+                        <input type="text" class="form-control mb-2" id="username" placeholder="Username">
+                        &nbsp;
+                        <input type="password" class="form-control mb-2" id="password" placeholder="Password">
+                        &nbsp;
+                        <button class="btn btn-light mb-2" type="submit">Login</button>
+                  </form>
+          </div>
+          <div class="form-inline wpWelcome">
+              <div id="playerName"></div>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="jumbotron border border-custom wpRegister">
+              <h1 class="display-4" align = "center">GAINZ Lifting Program</h1>
+              <p class="lead">GAINZ introduces a brand new fitness program tracker that is simpler than ever before. Pick from preset programs or customize your routine from our template to your liking with everything from
+              machines to free weights to calisthenics. Fitness has never been simpler.</p>
+              <hr class="my-4">
+              <a class="button btn btn-light btn-lg btn-block" href="wpSignup.html">Sign up today!</a>
+            </div>
+            <div class = "jumbotron border border-custom wpOnline">
+                <h1 class="display-3" id="playerName2"></h1>
+                <small id="playerWeight" class="form-text text-muted"></small>
+                <hr class="my-4">
+                <h1 class="display-4" id="monthYear" align = "center"></h1>
+                <div class="saturday">
+                <hr class="my-4">
+                <table class="table">
+                  <thead>
+                    <tr>
+                        <th scope="col" class="table-light"><center class="lead">Sunday</center></th>
+                        <th scope="col" class="table-light"><center class="lead">Monday</center></th>
+                        <th scope="col" class="table-light"><center class="lead">Tuesday</center></th>
+                        <th scope="col" class="table-light"><center class="lead">Wednesday</center></th>
+                        <th scope="col" class="table-light"><center class="lead">Thursday</center></th>
+                        <th scope="col" class="table-light"><center class="lead">Friday</center></th>
+                        <th scope="col" class="table-primary"><center class="lead">Saturday</center></th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td rowspan = "4" class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn btn-dark col-lg-12" disabled><div align="left">Rest</div></button>
+                            </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id="tricep" align="left"></div></button>
+                            </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-success" disabled><div id="bicep" align="left"></div></button>
+                            </center>
+                      </td>
+                      <td rowspan = "4" class="table-light" align = "center">
+                          <center class="form-group">
+                                <button type="button" class="btn btn-dark col-lg-12" disabled><div align="left">Rest</div></button>
+                          </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id="tricep2" align="left"></div></button>
+                          </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-success" disabled><div id = "bicep2" align="left"></div></button>
+                          </center>
+                      </td>
+                      <td rowspan = "4" class="table-primary" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn btn-dark col-lg-12" disabled><div align="left">Rest</div></button>
+                          </center>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id="chest" align="left"></div></button>
+                            </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-success" disabled><div id = "uBack" align="left"></div></button>
+                            </center>
+                      </td>
+
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id = "chest2" align="left"></div></button>
+                          </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-success" disabled><div id = "uBack2" align="left"></div></button>
+                          </center>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id = "shoulders" align="left"></div></button>
+                            </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-success" disabled><div id = "lBack" align="left"></div></button>
+                            </center>
+                      </td>
+
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id = "shoulders2" align="left"></div></button>
+                          </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-success" disabled><div id = "lBack2" align="left"></div></button>
+                          </center>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id = "traps" align="left"></div></button>
+                            </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                            <center class="form-group">
+                                <button type="button" class="btn  col-lg-12 btn-success" disabled><div id = "core" align="left"></div></button>
+                            </center>
+                      </td>
+
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-warning" disabled><div id = "traps2" align="left"></div></button>
+                          </center>
+                      </td>
+                      <td class="table-light" align = "center">
+                          <center class="form-group">
+                              <button type="button" class="btn  col-lg-12 btn-success" disabled><div id = "core2" align="left"></div></button>
+                          </center>
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script src="wp.js"></script>
+
+</html>

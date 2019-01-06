@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>GAINZ</title>
+        <style>
+            body {
+                //background-color: #f97b0f !important;
+                background-image: url("backGradient3.png");
+            }
+            .navbar {
+              background-color: #944fe7 !important;
+            }
+            .navbar .navbar-brand {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-brand:hover,
+            .navbar .navbar-brand:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a:hover,
+            .navbar .navbar-text a:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-link {
+              color: #ecf0f1 !important;
+              border-radius: .25rem;
+              margin: 0 0.25em;
+            }
+            .navbar .navbar-nav .nav-link:not(.disabled):hover,
+            .navbar .navbar-nav .nav-link:not(.disabled):focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-item.active .nav-link,
+            .navbar .navbar-nav .nav-item.active .nav-link:hover,
+            .navbar .navbar-nav .nav-item.active .nav-link:focus,
+            .navbar .navbar-nav .nav-item.show .nav-link,
+            .navbar .navbar-nav .nav-item.show .nav-link:hover,
+            .navbar .navbar-nav .nav-item.show .nav-link:focus {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle {
+              border-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle:hover,
+            .navbar .navbar-toggle:focus {
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle .navbar-toggler-icon {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-collapse,
+            .navbar .navbar-form {
+              border-color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link:hover {
+              color: #ecf0f1 !important;
+            }
+
+            @media (max-width: 575px) {
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 767px) {
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 991px) {
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 1199px) {
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .border-custom{border-color:#944fe7!important}
+            .login{
+                display:block;
+            }
+            .welcome{
+                display:none;
+                color:white;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-default bg-light sticky-top">
+          <a class="navbar-brand" href="index.html">
+            <img src="dumbbell.png" width="30" height="30" class="d-inline-block align-top" alt="">
+
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wp.html">Lifting Program</a>
+              </li>
+            </ul>
+          </div>
+          <div class="login">
+              <form id="accessForm" class="form-inline">
+
+                    <input type="text" class="form-control mb-2" id="username" placeholder="Username">
+                    &nbsp;
+                    <input type="password" class="form-control mb-2" id="password" placeholder="Password">
+                    &nbsp;
+                    <button class="btn btn-light mb-2" type="submit">Login</button>
+
+              </form>
+          </div>
+          <div class="form-inline welcome">
+              <div id="playerName"></div>
+          </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="GAINZ.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class = "container">
+            <div class="jumbotron border-info border border-custom mb-3">
+                <h1 class="display-3" align = "center">Welcome to GAINZ!</h1>
+                <hr class="my-4">
+                <p class="lead">GAINZ is a fun online mobile game that promotes a healthy lifestyle.
+                    Compete against friends in daily workouts and adventures. Compare scores by logging into our webpage as you rise to the top of the leaderboards.
+                    Join us in one of our many community events, like the first annual 5k race for GAINZ.
+                    Attendees will collect exclusive GAINZ content for their collection. Live the life you deserve and get your GAINZ today!</p>
+                <hr class="my-4">
+                <a class="button btn btn-light btn-lg btn-block" href="signup.html">Sign up</a>
+            </div>
+        </div>
+        <div class = "container">
+            <div class="jumbotron border-info border border-custom mb-3">
+                <h1 class="display-3">Statistics</h1>
+                <p class="lead">Login above to see your stats.</p>
+                <hr class="my-4">
+                <p class="lead">
+
+                    <div id="playerScore"></div>
+
+                </p>
+            </div>
+        </div>
+
+
+
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script src="main2.js"></script>
+</html>

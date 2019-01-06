@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>GAINZ - About</title>
+        <style>
+            body {
+                //background-color: #f97b0f !important;
+                background-image: url("backGradient.png");
+            }
+            .navbar {
+              background-color: #944fe7 !important;
+            }
+            .navbar .navbar-brand {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-brand:hover,
+            .navbar .navbar-brand:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-text a:hover,
+            .navbar .navbar-text a:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-link {
+              color: #ecf0f1 !important;
+              border-radius: .25rem;
+              margin: 0 0.25em;
+            }
+            .navbar .navbar-nav .nav-link:not(.disabled):hover,
+            .navbar .navbar-nav .nav-link:not(.disabled):focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-nav .nav-item.active .nav-link,
+            .navbar .navbar-nav .nav-item.active .nav-link:hover,
+            .navbar .navbar-nav .nav-item.active .nav-link:focus,
+            .navbar .navbar-nav .nav-item.show .nav-link,
+            .navbar .navbar-nav .nav-item.show .nav-link:hover,
+            .navbar .navbar-nav .nav-item.show .nav-link:focus {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle {
+              border-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle:hover,
+            .navbar .navbar-toggle:focus {
+              background-color: #ac86ee !important;
+            }
+            .navbar .navbar-toggle .navbar-toggler-icon {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-collapse,
+            .navbar .navbar-form {
+              border-color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link {
+              color: #ecf0f1 !important;
+            }
+            .navbar .navbar-link:hover {
+              color: #ecf0f1 !important;
+            }
+
+            @media (max-width: 575px) {
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 767px) {
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 991px) {
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            @media (max-width: 1199px) {
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ecf0f1 !important;
+              }
+              .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ecf0f1 !important;
+                background-color: #ac86ee !important;
+              }
+            }
+
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+              color: #ecf0f1 !important;
+            }
+            .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+              color: #ecf0f1 !important;
+              background-color: #ac86ee !important;
+            }
+            .border-custom{border-color:#944fe7!important}
+            .alert{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-default bg-light sticky-top">
+          <a class="navbar-brand" href="index.html">
+            <img src="dumbbell.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wp.html">Lifting Program</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron border border-custom">
+              <h1 class="display-4" align = "center">About</h1>
+              <hr class="my-4">
+                <p>GAINZ is the mobile app that allows you to level up your lifestyle. GAINZ allows you to input your weight, height, and equipment to design a tailor-made workout experience. GAINZ observes your daily progress and re-evaluates your workout to ensure the most efficient way to build muscle. With GAINZ tracking your diet is easier than ever. From macros down to each calorie GAINZ has you covered.
+                <br><br>
+Forget the gimmicks and get GAINZ!
+                <br><br>
+Diet, Exercise, and GAINZ!</p>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div align = "center" class="card border-custom col-lg-4" style="width: 18rem;">
+                <img class="card-img-top" src="crentbox.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">"I was skeptical at first, but GAINZ is the real deal. Tell Elon Musk he missed out, the future of working out is here." <br> -Brent Cox</p>
+                  </div>
+            </div>
+            <div align = "center" class="card border-custom col-lg-4" style="width: 18rem;">
+                <img class="card-img-top" src="rock.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">"All of my gains are thanks to GAINZ. These guys are pushing the boundaries of what a workout app can accomplish."<br>-Dwayne "The Rock" Johnson</p>
+                  </div>
+            </div>
+            <div align = "center" class="card border-custom col-lg-4" style="width: 18rem;">
+                <img class="card-img-top" src="hermione.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">"Downloaded the app after New Years. Ron and Harry have been competing on GAINZ everyday. Jokes on him, he's in the best shape of his life."<br>-Hermione Granger</p>
+                  </div>
+            </div>
+            </div>
+
+        </div>
+
+
+
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script src="main.js"></script>
+
+</html>
